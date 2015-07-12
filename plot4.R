@@ -18,7 +18,7 @@ hpc2days <- subset(housePowerConsump, Date=="2007-02-01" | Date=="2007-02-02")
 
 # Set the output to be png file plot4.png in the current folder
 print ("Setting output to be the png file ./plot4.png")
-#png("plot4.png")
+png("plot4.png")
 
 
 # Create plot
@@ -40,4 +40,4 @@ with(hpc2days, {
 
 # Close the output device
 print ("Closing the output file")
-#dev.off()
+dev.off()
