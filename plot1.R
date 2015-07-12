@@ -5,7 +5,8 @@ housePowerCons <- read.csv("household_power_consumption.txt",sep=";",
                            na.strings=c("NA","?"),
                            stringsAsFactors=FALSE)
 
-# Convert Date to date format
+# Convert Date field to date format
+# There is no need to deal with Time for this plot
 print ("Converting Date field to date format")
 housePowerCons$DateFormatted <-as.Date(housePowerCons$Date,format="%d/%m/%Y")
 
