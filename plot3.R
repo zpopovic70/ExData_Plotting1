@@ -24,9 +24,9 @@ png("plot3.png")
 # Create plot
 print ("Creating Plot3")
 with(hpc2days, {
-    plot(DateTime, Sub_metering_1, xlab="", ylab="Global Active Power (kilowatts)", type="l")
-    lines(DateTime, Sub_metering_2, xlab="", ylab="Global Active Power (kilowatts)", type="l", col='Red')
-    lines(DateTime, Sub_metering_3, xlab="", ylab="Global Active Power (kilowatts)", type="l", col='Blue')
+    plot(DateTime, Sub_metering_1, xlab="", ylab="Energy sub metering", type="l")
+    lines(DateTime, Sub_metering_2, xlab="", ylab="Energy sub metering", type="l", col='Red')
+    lines(DateTime, Sub_metering_3, xlab="", ylab="Energy sub metering", type="l", col='Blue')
 })
 legend("topright",
        col=c("black", "red", "blue"), 
